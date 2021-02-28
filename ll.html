@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ac07b809a4b548d490a69915f54c6d32 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ac07b809a4b548d490a69915f54c6d32" ></div>
+        
+</body>
+<script>    
+    
+            var map_ac07b809a4b548d490a69915f54c6d32 = L.map(
+                "map_ac07b809a4b548d490a69915f54c6d32",
+                {
+                    center: [37.5536067, 126.9674308],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79260c24cafe4ed5a74e54cb22506eae = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ac07b809a4b548d490a69915f54c6d32);
+        
+    
+            var marker_0900634b88014ef683f2f82bd914491e = L.marker(
+                [37.5536067, 126.9674308],
+                {}
+            ).addTo(map_ac07b809a4b548d490a69915f54c6d32);
+        
+    
+        var popup_1a8cca60f4e34753b11cb4e51ba3f28e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9864b12a34c44f8bbbac0a2d8a9a4b5e = $(`<div id="html_9864b12a34c44f8bbbac0a2d8a9a4b5e" style="width: 100.0%; height: 100.0%;">서울역(클릭하면 보여짐)</div>`)[0];
+            popup_1a8cca60f4e34753b11cb4e51ba3f28e.setContent(html_9864b12a34c44f8bbbac0a2d8a9a4b5e);
+        
+
+        marker_0900634b88014ef683f2f82bd914491e.bindPopup(popup_1a8cca60f4e34753b11cb4e51ba3f28e)
+        ;
+
+        
+    
+    
+            marker_0900634b88014ef683f2f82bd914491e.bindTooltip(
+                `<div>
+                     서울역(마우스올리면보여짐)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_41974b2408be4466b4eabeb287ae7fd8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_03d630ad91244922ad0e87e4d00986fb = new L.Control.MiniMap(
+                tile_layer_41974b2408be4466b4eabeb287ae7fd8,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_ac07b809a4b548d490a69915f54c6d32.addControl(mini_map_03d630ad91244922ad0e87e4d00986fb);
+        
+    
+            var marker_f9a40331e5594660953af378aa678b28 = L.marker(
+                [37.5536067, 126.9674308],
+                {}
+            ).addTo(map_ac07b809a4b548d490a69915f54c6d32);
+        
+    
+        var popup_997ab255388c4c3aaf8febff49753490 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94aa499c53094882b858ed2b3d82aac3 = $(`<div id="html_94aa499c53094882b858ed2b3d82aac3" style="width: 100.0%; height: 100.0%;">서울역(클릭하면 보여짐)</div>`)[0];
+            popup_997ab255388c4c3aaf8febff49753490.setContent(html_94aa499c53094882b858ed2b3d82aac3);
+        
+
+        marker_f9a40331e5594660953af378aa678b28.bindPopup(popup_997ab255388c4c3aaf8febff49753490)
+        ;
+
+        
+    
+    
+            marker_f9a40331e5594660953af378aa678b28.bindTooltip(
+                `<div>
+                     서울역(마우스올리면보여짐)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
